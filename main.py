@@ -6,10 +6,7 @@ videoname = "canvideo.mp4"
 
 
 video = CaptureVid(videoname)
-VideoProcessing(video)
+result = VideoProcessing(video)
 ReleaseVideo(video)
-
-
-
-
-
+ReleaseVideo(result)
+destroy()
