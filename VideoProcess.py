@@ -3,7 +3,7 @@ from FrameOutput import *
 from VideoWriting import *
 
 def VideoProcessing(video):
-    result = initresult("OverlayVideo.mp4",(int(video.get(3)),int(video.get(3))))
+    result = initresult("OverlayVideo.mp4",(int(video.get(3)),int(video.get(4))))
     while True:
         ret, frame = video.read()
         if not ret:
