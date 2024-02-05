@@ -4,4 +4,5 @@ import cv2
 
 def ReleaseVideo(video):
     video.release()
+def destroy():
     cv2.destroyAllWindows()
