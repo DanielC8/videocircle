@@ -16,7 +16,7 @@ def ImageProcess(frame):
     cannyedge = CannyDetection(gaussian,5,30)
 
     # hough circles
-    circles = HoughCircle(cannyedge,1.2,9999,110,60,0,90)
+    circles = HoughCircle(cannyedge,1.5,9999,130,50,0,90)
     # loops through the circles
     if circles is not None:
         circlelist = np.uint16(np.around(circles))
